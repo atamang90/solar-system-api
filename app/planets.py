@@ -1,11 +1,16 @@
-class planets:
+class planet:
     def __init__(self,id,name,description,distance):
         self.id=id
         self.name=name
         self.description=description
         self.distance=distance
 
-PLANETS = {"id":1,"name":"Mercury","description":"first planet to sun","distance":"35 million"}
+PLANETS = [
+           planet(1,"Mercury","first from the sun",35000000),
+           planet(2,"Venus","second from the sun",67000000),
+           planet(3,"Earth","Third from the sun",93000000),
+           planet(4,"Mars","Fourth from the sun",142000000)]
+
 
 def get_all_planets():
     planet_response=[]
