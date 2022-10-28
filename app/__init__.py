@@ -10,5 +10,5 @@ def create_app(test_config=None):
     app.register_blueprint(planets_bp)
 
     
-
+    print(app.url_map)
     return app

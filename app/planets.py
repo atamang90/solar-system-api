@@ -26,8 +26,9 @@ def get_all_planets():
     return jsonify(planet_response)
 
 
-@planets_bp.route('/55', methods = ['GET'])
+@planets_bp.route('/<id>', methods = ['GET'])
 def get_one_planet(id):
+    print(id)
     planet = validate_planet(id)
     return planet
 
