@@ -1,5 +1,5 @@
 from app import db
-from sqlalchemy.dialects.mysql import BIGINT
+# from sqlalchemy.dialects.mysql import BIGINT
 
 #create class that is inherited from the db.Model from SQLAlchemy
 class Planet(db.Model):

@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+from alembic import op
+import sqlalchemy as sa
 
 db = SQLAlchemy()
 migrate = Migrate()
