@@ -1,5 +1,8 @@
 from app import db
 # from sqlalchemy.dialects.mysql import BIGINT
+# Where is your planet dictionary?
+
+
 
 #create class that is inherited from the db.Model from SQLAlchemy
 class Planet(db.Model):
@@ -7,4 +10,8 @@ class Planet(db.Model):
     name = db.Column(db.String)
     description = db.Column(db.String)
     distance =db.Column(db.BIGINT)
+
+
+
+
     
