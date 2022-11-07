@@ -11,6 +11,22 @@ class Planet(db.Model):
     description = db.Column(db.String)
     distance =db.Column(db.BIGINT)
 
+def to_dict(self):
+        planet_dict = {}
+        planet_dict["id"] = self.id
+        planet_dict["name"] = self.name
+        planet_dict["description"] = self.description
+        planet_dict["distance"] = self.distance
+
+        return planet_dict
+
+@classmethod
+def from_dict(cls, planet_data):
+   new_planet = Planet(name=planet_data["name"],
+                    description=planet_data["description"],
+                    distance=planet_data["distance"])
+
+   return new_planet
 
 
 
